@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		04C5F372201E876100815C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5F371201E876100815C21 /* AppDelegate.swift */; };
-		04C5F374201E876100815C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5F373201E876100815C21 /* ViewController.swift */; };
 		04C5F377201E876100815C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C5F375201E876100815C21 /* Main.storyboard */; };
 		04C5F379201E876100815C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C5F378201E876100815C21 /* Assets.xcassets */; };
 		04C5F37C201E876100815C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C5F37A201E876100815C21 /* LaunchScreen.storyboard */; };
+		04F11AF4201F146800C36BD5 /* NYOBetterZoomUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F11AF0201F146700C36BD5 /* NYOBetterZoomUIScrollView.m */; };
+		04F11AFB201F17A200C36BD5 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F11AFA201F17A200C36BD5 /* OtherViewController.swift */; };
+		04F11AFD201F17FD00C36BD5 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F11AFC201F17FD00C36BD5 /* Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04C5F36E201E876100815C21 /* ImageEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C5F371201E876100815C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04C5F373201E876100815C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04C5F376201E876100815C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04C5F378201E876100815C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C5F37B201E876100815C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C5F37D201E876100815C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F11AEF201F146700C36BD5 /* NYOBetterZoomUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYOBetterZoomUIScrollView.h; sourceTree = "<group>"; };
+		04F11AF0201F146700C36BD5 /* NYOBetterZoomUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYOBetterZoomUIScrollView.m; sourceTree = "<group>"; };
+		04F11AF9201F163200C36BD5 /* ImageEx-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageEx-Bridging-Header.h"; sourceTree = "<group>"; };
+		04F11AFA201F17A200C36BD5 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		04F11AFC201F17FD00C36BD5 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,26 @@
 		04C5F370201E876100815C21 /* ImageEx */ = {
 			isa = PBXGroup;
 			children = (
+				04F11AEC201F146700C36BD5 /* ScrollView */,
 				04C5F371201E876100815C21 /* AppDelegate.swift */,
-				04C5F373201E876100815C21 /* ViewController.swift */,
+				04F11AFA201F17A200C36BD5 /* OtherViewController.swift */,
+				04F11AFC201F17FD00C36BD5 /* Constraints.swift */,
 				04C5F375201E876100815C21 /* Main.storyboard */,
 				04C5F378201E876100815C21 /* Assets.xcassets */,
 				04C5F37A201E876100815C21 /* LaunchScreen.storyboard */,
 				04C5F37D201E876100815C21 /* Info.plist */,
+				04F11AF9201F163200C36BD5 /* ImageEx-Bridging-Header.h */,
 			);
 			path = ImageEx;
+			sourceTree = "<group>";
+		};
+		04F11AEC201F146700C36BD5 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				04F11AEF201F146700C36BD5 /* NYOBetterZoomUIScrollView.h */,
+				04F11AF0201F146700C36BD5 /* NYOBetterZoomUIScrollView.m */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C5F374201E876100815C21 /* ViewController.swift in Sources */,
 				04C5F372201E876100815C21 /* AppDelegate.swift in Sources */,
+				04F11AF4201F146800C36BD5 /* NYOBetterZoomUIScrollView.m in Sources */,
+				04F11AFD201F17FD00C36BD5 /* Constraints.swift in Sources */,
+				04F11AFB201F17A200C36BD5 /* OtherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.obnoxious.ImageEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageEx/ImageEx-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +318,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.obnoxious.ImageEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageEx/ImageEx-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
